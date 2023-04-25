@@ -20,7 +20,7 @@ public class Carguero implements Serializable {
         boolean huecoTomado = false;
         if (this.carguero[0].Idduplicado(c) + this.carguero[1].Idduplicado(c) + this.carguero[2].Idduplicado(c) == 0) {
             for(int i = 0; i < 3 && !this.carguero[i].apilarContenedor(c); ++i) {
-            }
+             }
         }
 
     }
