@@ -39,7 +39,7 @@ public class Contenedor implements Serializable {
             this.empresaReceptora = empresaReceptora;
         }
 
-    }
+     }
 
     public int getItentificador() {
         return this.itentificador;

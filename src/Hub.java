@@ -14,7 +14,7 @@ public class Hub implements Serializable {
         this.libresPrioridad[0] = 10;
         this.libresPrioridad[1] = 10;
         this.libresPrioridad[2] = 100;
-    }
+     }
 
     public int Idduplicado(Contenedor c) {
         for(int j = 0; j < 12; ++j) {
