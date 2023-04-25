@@ -2,6 +2,7 @@
 // Source code recreated from a .class file by IntelliJ IDEA
 // (powered by FernFlower decompiler)
 //
+//Daniel Pozo Marques
 
 import java.io.Serializable;
 
@@ -140,9 +141,9 @@ public class Hub implements Serializable {
         String a = " ";
         for(int i = 0; i < 10; ++i) {
             for(int j = 0; j < 12; ++j) {
-                boolean aduana=false;
                 if (this.complex[i][j] != null && this.complex[i][j].getPeso()==peso) {
-                    a = a +" El contenedor [" +i +"] ["+ j + "] Id: " + this.complex[i][j].getItentificador() + ", Remintente: " + this.complex[i][j].getEmpresaReceptora() + ", Peso: " + this.complex[i][j].getPeso() + " Aduana: " +aduana+" .";
+                    this.complex[i][j].setAduana(true);
+                    a = a +" El contenedor [" +i +"] ["+ j + "] Id: " + this.complex[i][j].getItentificador() + ", Remintente: " + this.complex[i][j].getEmpresaReceptora() + ", Peso: " + this.complex[i][j].getPeso() + " Aduana: " +this.complex[i][j].getAduana()+" .";
                 }
             }
         }

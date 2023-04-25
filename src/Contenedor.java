@@ -2,6 +2,7 @@
 // Source code recreated from a .class file by IntelliJ IDEA
 // (powered by FernFlower decompiler)
 //
+//Daniel Pozo Marques
 
 import java.io.Serializable;
 
@@ -13,6 +14,7 @@ public class Contenedor implements Serializable {
     private String descripción;
     private String empresaEmisora;
     private String empresaReceptora;
+    private boolean aduana=false;
 
     public Contenedor(int itentificador, int prioridad, double peso, String paísProcedencia, String descripción, String empresaEmisora, String empresaReceptora) {
         this.itentificador = itentificador;
@@ -97,5 +99,13 @@ public class Contenedor implements Serializable {
             this.empresaReceptora = this.empresaEmisora;
         }
 
+    }
+
+    public boolean getAduana() {
+        return aduana;
+    }
+
+    public void setAduana(boolean aduana) {
+        this.aduana = aduana;
     }
 }
